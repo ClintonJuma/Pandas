@@ -17,3 +17,15 @@ calories = {"day1" : 420, "day2": 380, "day3":390}
 cal = pd.Series(calories)
 print(cal)
 
+
+import pandas as pd
+import numpy as np
+data = np.array(["a", "b", "c", "d"])
+s = pd.Series(data, index=["one", "two", "three", "four"])
+print(s)
+
+#Creating series from dict
+deta = {"a": 0.,  "b": 1., "c": 2.}
+s = pd.Series(deta)
+print(s)
+print(s[:2])
